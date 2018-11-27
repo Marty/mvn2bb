@@ -62,6 +62,7 @@ uploadArchives {
     repositories.mavenDeployer {
         configuration = configurations.deployLibrary
         repository(url: 'git:releases://git@bitbucket.org:' + COMPANY + '/' + REPOSITORY_NAME + '.git')
+        snapshotRepository(url: 'git:snapshots://git@bitbucket.org:' + COMPANY + '/' + REPOSITORY_NAME + '.git')
 
         uniqueVersion = true
 
