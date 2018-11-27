@@ -65,7 +65,7 @@ uploadArchives {
 
         uniqueVersion = true
 
-        pom.project {
+        pom {
             groupId = ARTIFACT_PACKAGE
             version = ARTIFACT_VERSION
             artifactId = ARTIFACT_NAME
