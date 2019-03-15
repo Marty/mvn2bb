@@ -102,3 +102,9 @@ def getBase64EncodedCredentials() {
     def s = USERNAME + ":" + PASSWORD;
     return s.bytes.encodeBase64().toString()
 }
+
+def preferLocal(String localProject, String dependency) {
+    def project = project(':' + localProject)
+
+    return project.projectDir.exists() ? project : dependency
+}
