@@ -103,7 +103,7 @@ def getBase64EncodedCredentials() {
     return s.bytes.encodeBase64().toString()
 }
 
-def preferLocal(String localProject, String dependency) {
+ext.preferLocal = { String localProject, String dependency ->
     def project = project(':' + localProject)
 
     return project.projectDir.exists() ? project : dependency
