@@ -62,8 +62,6 @@ uploadArchives {
         repository(url: 'git:releases://git@bitbucket.org:' + COMPANY + '/' + REPOSITORY_NAME + '.git')
         snapshotRepository(url: 'git:snapshots://git@bitbucket.org:' + COMPANY + '/' + REPOSITORY_NAME + '.git')
 
-        uniqueVersion = true
-
         pom.project {
             groupId = ARTIFACT_PACKAGE
             version = ARTIFACT_VERSION
